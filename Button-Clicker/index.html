@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dojonary</h1>
+        <div class="search_elements">
+            <form>
+                <input type="search" name="search" placeholder="Search">
+            </form>
+        </div>
+        <div class="btn_container"> <!-- I added this container because i needed a way to maintain the positions of the other elements in the navbar when the logout button gets removed on click-->
+            <button class="btn_login" onclick="logging(this)">Login</button>
+        </div>
+    </header>
+    <main>
+        <div class="column1">
+            <div class="definition_card">
+                <div class="definition_left">
+                    <h2>Ninja</h2>
+                    <p class="speech_type">noun</p>
+                    <p class="speech_plural">Plural: <span>ninjas</span></p>
+                    <button class="btn_likes" onclick="alert('Ninja has been liked!')">13 likes</button>
+                </div>
+                <div class="definition_right">
+                    A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a>
+                </div>
+            </div>
+            <div class="definition_card">
+                <div class="definition_left">
+                    <h2>Ninja</h2>
+                    <p class="speech_type">noun</p>
+                    <p class="speech_plural">Plural: <span>ninjas</span></p>
+                    <button class="btn_likes" onclick="alert('Ninja has been liked!')">13 likes</button>
+                </div>
+                <div class="definition_right">
+                    <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="column2">
+            <p>Dojonary is defined by YOU</p>
+            <button class="btn_add_definition" onclick="removeButton(this)">Add Definition</button>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

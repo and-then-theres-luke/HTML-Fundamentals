@@ -1,0 +1,256 @@
+/* Wireframe */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header Styling */
+
+.site_header {
+    background-color: #353535;
+    height: 80px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styling for Profile Links */
+
+.header_div1 {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.header_div1 a {
+    text-decoration: none;
+    color: #ebebeb;
+    margin-right: 15px;
+}
+
+.header_div1 h1, .header_div p {
+    margin-left: 20px;
+}
+
+/* Styling for Sign Out Button */
+
+.header_div2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 10%;
+}
+.nav_btn {
+    color: white;
+    background-color: rgb(0, 204, 204);
+    border-style: solid;
+    box-shadow: 2px 2px black;
+    padding: 2px 8px;
+}
+
+.nav_btn:active {
+    box-shadow: none;
+    background-color: aqua;
+}
+
+/* Styling for Master Container */
+
+
+
+
+.sub_container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Styling for Left Column */
+
+.container1 {   
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+/* Styling for Right Column */
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+/* Left Column - User Card */
+
+
+
+.user_card_header {
+    background-color: #5ca1fc;
+    height: 100px;
+    width: inherit;
+    display: flex;
+    padding-left: 50px;
+    position: relative;
+
+}
+
+.user_card_body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: inherit;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top: none;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-color: #ebebeb;
+}
+
+.user_card_body p {
+    margin: 5px;
+}
+.content_row {
+    display: flex;
+    position: relative;
+    align-items: center;
+    left: -35px;
+}
+#location_pin, #cog_wheel {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+#profile_pic {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 50px;
+    border-radius: 15px;
+}
+
+
+/* Left Column - Education Card */
+
+
+.user_education_card_header {
+    background-color: #707070;
+    color: white;
+    padding-left: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.user_education_card_body {
+    padding-top: 20px;
+    padding-left: 50px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    border-radius: 20px;
+    border-top: none;
+    box-shadow:inset 0px 0px 0px 3px #ebebeb;
+}
+
+/*Connection Request Card, Your Connections Card */
+
+.connection_request_header, .your_connections_header {
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: #707070;
+    color: #ebebeb;
+}
+
+
+
+.connection_request_number, .your_connections_number {
+    padding: 5px 10px;
+    color: #353535;
+    background-color: #ebebeb;
+    border-radius: 20px;
+}
+
+.connection_request_header p, .your_connections_header p {
+    margin-right: 10px;
+}
+
+.connection_request_body, .your_connections_body, .your_connections_footer {
+    padding: 25px 10px 20px;
+    width: inherit;
+    border-top: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top: none;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-color: #ebebeb;
+}
+.your_connections_body {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.your_connections_footer {
+    padding: 10px;
+    width: inherit;
+    border-top: none;
+}
+
+.your_connections_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.connection_request_body_line_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connection_line_item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px 0px;
+}
+
+.connection_line_item img {
+    margin-right: 10px;
+}
+.requestor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.requestor img {
+    margin-right: 10px;
+}
+
+.connection_request_body img, .your_connections_body img {
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+}
+
+
+
+/* Feedback 
+
+Use ONE h1
+Collapse "line" elements for readability
+Only containing elements exploded out
+Remove header_div2
+subdiv between site_header and header_div1 to flex the width to 80%

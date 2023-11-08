@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="site_header">
+        <div class="header_div1">
+            <a href="#"><h1>Profile</h1></a>
+            <a href="#"><p>Home</p></a>
+            <a href="#"><p>My Profile</p></a>
+            <a href="#"><p>Find Connections</p></a>
+        </div>
+        <div class="header_div2">
+            <button class="nav_btn">Sign Out</button> 
+        </div>
+    </div>
+    <div class="sub_container">
+        <div class="container1">
+            <div class="user_card">
+                <div class="user_card_header">
+                    <img src="./pictures/profile_pic.jpg" alt="lukes_picture" id="profile_pic">
+                </div>
+                <div class="user_card_body">
+                    <h1 id="user_name">Luke Thayer</h1>
+                    <p class="content_row"><img src="./pictures/pin.png" alt="location_pin" id="location_pin">Seattle</p>
+                    <p>Artist | Journalist | Chef | Recruiter | Developer | Dog Papa</p>
+                    <p>Master of None
+                    </p>
+                    <p class="content_row"><img src="./pictures/cog-wheel-silhouette.png" alt="cog_wheel" id="cog_wheel"><a onclick="redefineUser(userName)" href="#">edit profile</a></p> 
+                </div>
+            </div>
+            <div class="user_education_card">
+                <div class="user_education_card_header">
+                    <h3>Education</h3>
+                </div>
+                <div class="user_education_card_body">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <h4>Oct 2023 - Mar 2024</h4>
+                    <p>I learned to eat code for breakfast.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="connection_request_header">
+                <p class="connection_request_number">2</p>
+                <p>Connection Requests</p>
+            </div>
+            <div class="connection_request_body">
+                <div class="connection_request_body_line_item" id="lineitem1">
+                    <div class="requestor">
+                        <img src="./pictures/todd-s.jpg" alt="requestor_picture"><span>Todd E</span>
+                    </div>
+                    <div class="accept_deny">
+                        <img src="./pictures/accept.png" alt="check_mark" id="accept1">
+                        <img src="./pictures/deny.png" alt="ex_mark" id="deny1" onclick="requestDenied(lineItem1, connectionRequest)">
+                    </div>
+                </div>
+                <div class="connection_request_body_line_item" id="lineitem2">
+                    <div class="requestor">
+                        <img src="./pictures/phil-s.jpg" alt="requestor_picture"><span>Phil K</span>
+                    </div>
+                    <div class="accept_deny">
+                        <img src="./pictures/accept.png" alt="check_mark" id="accept2">
+                        <img src="./pictures/deny.png" alt="ex_mark" id="deny2" onclick="requestDenied(lineItem2, connectionRequest)">
+                    </div>
+                </div>
+            </div>
+            <div class="your_connections_header">
+                <p class="your_connections_number">500+</p>
+                <p>Your Connections</p>
+            </div>
+            <div class="your_connections_body">
+                <span class="connection_line_item">
+                    <img src="./pictures/adrien-s.jpg" alt="requestor_picture">
+                    Adrien D
+                </span>
+                <span class="connection_line_item">
+                    <img src="./pictures/anne-s.jpg" alt="requestor_picture">
+                    Anne J
+                </span>
+                <span class="connection_line_item">
+                    <img src="./pictures/alayne-s.jpg" alt="requestor_picture">
+                    Alayne T
+                </span>
+                <span class="connection_line_item">
+                    <img src="./pictures/arry-s.jpg" alt="requestor_picture">
+                    Arry Y
+                </span>
+            </div>
+            <div class="your_connections_footer">
+                <a href="#"> View More</a>
+            </div>
+        </div>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>

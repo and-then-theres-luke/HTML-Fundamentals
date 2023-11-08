@@ -1,0 +1,53 @@
+/* Main page elements */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.header_margin {
+    background-color: #5ca1fc;
+    height: 100px;
+    width: inherit;
+    display: flex;
+    padding-left: 50px;
+    position: relative;
+    top: 20px;
+}
+
+.body_margin {
+    background-color: white;
+    width: inherit;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    border-top: none;
+    box-shadow:inset 0px 0px 0px 3px #ebebeb;
+}
+
+/* Content Styling */
+
+.bio_info1 {
+    display: flex;
+    align-items: center;
+}
+
+#location_pin, #cog_wheel {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+#profile_pic {
+    height: inherit;
+    width: auto;
+    position: relative;
+    top: 50px;
+    border-radius: 15px;
+}
+
+#attrib {
+    justify-content: center;
+}

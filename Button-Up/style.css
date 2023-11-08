@@ -1,0 +1,35 @@
+button{
+    text-align: center;
+    font-family: Arial;
+}
+#search{
+    border-color: cadetblue;
+    font-weight: bold;
+    color: cadetblue;
+    border-style: solid;
+    border-width: 2px;
+    width: 140px;
+    padding: 5px;
+    background-color: #f7f9fc;
+    box-shadow: none;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+#plus{
+    background-color: aquamarine;
+    color: white;
+    border: 0px;
+    border-radius: 15px;
+    font-size: large;
+    margin-bottom: 10px;
+}
+#create_account{
+    background-color: blue;
+    border-style: solid;
+    font-size: medium;
+    padding: 5px;
+    color: white;
+    box-shadow: 2px 2px black;
+    width: 250px;
+    font-weight: light;
+}

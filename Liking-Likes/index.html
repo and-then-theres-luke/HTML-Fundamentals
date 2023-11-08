@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liking Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Network</h1>
+    </header>
+    <main>
+        <div class="left_column">
+            <img src="profile.PNG" alt="profile_pic" id="profile_pic">
+            <a href="#">Add an avatar. Or don't.</a>
+            <h2>James Doe</h2>
+        </div>
+        <div class="right_column">
+            <div class="user_card">
+                <div class="user_card_top">
+                    <p class="user_name">Neil M</p>
+                    <p class="like_number"><span id="user1">9</span> like(s)</p>
+                    <button class="btn_like" onclick="addLike(user1)">Like</button>
+                </div>
+                <div class="user_card_body">
+                    <p class="filler_text">I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+                </div>
+            </div>
+            <div class="user_card">
+                <div class="user_card_top">
+                    <p class="user_name">Nichole K</p>
+                    <p class="like_number"><span id="user2">12</span> like(s)</p>
+                    <button class="btn_like" onclick="addLike(user2)">Like</button>
+                </div>
+                <div class="user_card_body">
+                    <p class="filler_text">Just finished my <a href="#">next comic</a>, check it out.</p>
+                </div>
+            </div>
+            <div class="user_card">
+                <div class="user_card_top">
+                    <p class="user_name">Jim R</p>
+                    <p class="like_number"><span id="user3">9</span> like(s)</p>
+                    <button class="btn_like" onclick="addLike(user3)">Like</button>
+                </div>
+                <div class="user_card_body">
+                    <p class="filler_text">I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

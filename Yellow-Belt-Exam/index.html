@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pet Shelter</title>
+</head>
+<body>
+    <header>
+        <div class="header1">
+            <div class="brand_container">
+                <img src="./pictures/heart-light.png" alt="heart_light">
+                <h1>Pet Shelter</h1>
+            </div>
+            <div class="nav_links">
+                <p><a href="#">Find a Pet</a></p>
+                <p><a href="#">About</a></p>
+                <p id="donate_link"><a href="#" onclick="remove1(donatebutton)">Donate</a></p>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="lookfor_container">
+                <p>I'm looking for a...</p>
+                <form>
+                    <img src="./pictures/paw-light.png" alt="paw_light" id="paw_light">
+                    <select id="pet_selector" onchange="petSelector(this.value)">
+                        <option value="any">Any Pet</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                    </select>
+                </form>
+            </div>
+            <div class="zipcode_container">
+                <p>in or near...</p>
+                <form name="zipcode">
+                    <img src="./pictures/pin-light.png" alt="pin_light" id="pin_light">
+                    <input type="text" value="City or zipcode...">
+                </form>
+            </div>
+            <button id="best_friend_finder">Find your new best friend</button>
+        </div>
+    </header>
+    <main>
+        <article class="pet_info">
+            <div class="bio_container">
+                <img src="./pictures/pepper.jpg" alt="pepper">
+                <div class="bio_container_info">
+                    <h2>Pepper</h2>
+                    <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                </div>
+            </div>
+            <div class="social_info">
+                <p><span id="like_counter_1">3</span> pettings</p>
+                <button class="like_button" id="like_button_1" onclick="addLike(likes1)">Pet Pepper</button>
+            </div>
+        </article>
+        <article class="pet_info">
+            <div class="bio_container">
+                <img src="./pictures/bruce.jpg" alt="bruce">
+                <div class="bio_container_info">
+                    <h2>Bruce</h2>
+                    <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                </div>
+            </div>
+            <div class="social_info">
+                <p><span id="like_counter_2">5</span> pettings</p>
+                <button class="like_button" id="like_button_2" onclick="addLike(likes2)">Pet Bruce</button>
+            </div>
+        </article>
+        <article class="pet_info">
+            <div class="bio_container">
+                <img src="./pictures/oscar.jpg" alt="oscar">
+                <div class="bio_container_info">
+                    <h2>Oscar</h2>
+                    <p>Oscar is bright, energetic, and friendly. He is looking for a good home.</p>
+                </div>
+            </div>
+                <div class="social_info">
+                    <p><span id="like_counter_3">3</span> pettings</p>
+                    <button class="like_button" id="like_button_3" onclick="addLike(likes3)">Pet Oscar</button>
+                </div>
+        </article>
+    </main>
+<script src="scripts.js"></script>
+</body>
+</html>

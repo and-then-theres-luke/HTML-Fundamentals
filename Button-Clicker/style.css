@@ -1,0 +1,146 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header Styling */
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10%;
+}
+header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: gray;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+.btn_container {
+    margin-right: 20px;
+    width: 75px;
+}
+
+/* Body Styling */
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Column 1 Styling */
+
+.column1 {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+
+.definition_card {
+    display: flex;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    margin-bottom: 25px;
+
+}
+
+.definition_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 20px;
+    flex-wrap: nowrap;
+    flex: 1;
+}
+
+.definition_left h2, .definition_left p {
+    margin: 5px;
+}
+
+.definition_right {
+    padding: 0 10px;
+    flex: 3;
+}
+
+.speech_plural {
+    font-size: 10pt;
+}
+
+.speech_plural span {
+    font-style: italic;
+}
+
+/* Column 2 Styling */
+
+.column2 {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    flex: 2;
+}
+
+.column2 p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 24px;
+}
+
+/* Button Styling */
+
+.btn_likes {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(255, 187, 0);
+    box-shadow: 2px 2px black;
+    border: 2px black;
+    padding: 5px 0 5px;
+}
+
+.btn_likes:active {
+    box-shadow: none;
+    background-color: rgb(255, 225, 144);
+}
+
+.btn_add_definition {
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: rgb(0, 194, 58);
+    box-shadow: 2px 2px black;
+    border: 2px black;
+    padding: 5px 0 5px;
+}
+
+.btn_add_definition:active {
+    box-shadow: none;
+    background-color: rgb(0, 255, 76);
+}
+
+.btn_login {
+    width: 75px;
+    background-color: rgb(0, 51, 190);
+    box-shadow: 2px 2px black;
+    border: 2px black;
+    padding: 5px 15px 5px;
+    color: white;
+}
+
+.btn_login:active {
+    box-shadow: none;
+    background-color: rgb(0, 68, 255);
+}

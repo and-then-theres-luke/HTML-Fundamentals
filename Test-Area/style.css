@@ -1,0 +1,11 @@
+.dojo {
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
