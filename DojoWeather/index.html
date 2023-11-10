@@ -21,10 +21,10 @@
     <main>
         <div class="row1">
             <h1>San Jose</h1>
-            <form name="temp_selector" class="temp_selector" onchange="convert(tempArray)">
+            <form name="temp_selector" class="temp_selector" id="temp_selector">
                 <p>see tempurature in</p>
-                <select>
-                    <option value="celcius">C &deg;</option>
+                <select onchange="convertTo()" id="changer">
+                    <option value="celsius">C &deg;</option>
                     <option value="fahrenheit">F &deg;</option>
                 </select>
             </form>
@@ -35,8 +35,8 @@
                 <img src="./pictures/some_rain.png" alt="some_rain">
                 <p>some rain</p>
                 <div class="high_low">
-                    <p class="high"><span id="temp1">24</span> &deg;</p>
-                    <p class="low"><span id="temp2">18</span> &deg;</p>
+                    <p class="high"><span class="urature" id="temp1">24</span> &deg;</p>
+                    <p class="low"><span class="urature" id="temp2">18</span> &deg;</p>
                 </div>
             </div>
             <div class="weather_card">
@@ -44,8 +44,8 @@
                 <img src="./pictures/some_sun.png" alt="some_sun">
                 <p>some sun</p>
                 <div class="high_low">
-                    <p class="high"><span id="temp3">27</span> &deg;</p>
-                    <p class="low"><span id="temp4">19</span> &deg;</p>
+                    <p class="high"><span class="urature" id="temp3">27</span> &deg;</p>
+                    <p class="low"><span class="urature" id="temp4">19</span> &deg;</p>
                 </div>
             </div>
             <div class="weather_card">
@@ -53,8 +53,8 @@
                 <img src="./pictures/some_clouds.png" alt="some_clouds">
                 <p>some clouds</p>
                 <div class="high_low">
-                    <p class="high"><span id="temp5">21</span> &deg;</p>
-                    <p class="low"><span id="temp6">16</span> &deg;</p>
+                    <p class="high"><span class="urature" id="temp5">21</span> &deg;</p>
+                    <p class="low"><span class="urature" id="temp6">16</span> &deg;</p>
                 </div>
             </div>
             <div class="weather_card">
@@ -62,8 +62,8 @@
                 <img src="./pictures/some_sun.png" alt="some_sun">
                 <p>some sun</p>
                 <div class="high_low">
-                    <p class="high"><span id="temp7">26</span> &deg;</p>
-                    <p class="low"><span id="temp8">21</span> &deg;</p>
+                    <p class="high"><span class="urature" id="temp7">26</span> &deg;</p>
+                    <p class="low"><span class="urature" id="temp8">21</span> &deg;</p>
                 </div>
             </div>
         </div>
