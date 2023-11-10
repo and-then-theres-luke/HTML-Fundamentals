@@ -21,7 +21,7 @@
     <main>
         <div class="row1">
             <h1>San Jose</h1>
-            <form action="scripts.js" name="temp_selector" class="temp_selector">
+            <form name="temp_selector" class="temp_selector" onchange="convert(tempArray)">
                 <p>see tempurature in</p>
                 <select>
                     <option value="celcius">C &deg;</option>
@@ -35,8 +35,8 @@
                 <img src="./pictures/some_rain.png" alt="some_rain">
                 <p>some rain</p>
                 <div class="high_low">
-                    <p class="high">24 &deg;</p>
-                    <p class="low">18 &deg;</p>
+                    <p class="high"><span id="temp1">24</span> &deg;</p>
+                    <p class="low"><span id="temp2">18</span> &deg;</p>
                 </div>
             </div>
             <div class="weather_card">
@@ -44,8 +44,8 @@
                 <img src="./pictures/some_sun.png" alt="some_sun">
                 <p>some sun</p>
                 <div class="high_low">
-                    <p class="high">27 &deg;</p>
-                    <p class="low">19 &deg;</p>
+                    <p class="high"><span id="temp3">27</span> &deg;</p>
+                    <p class="low"><span id="temp4">19</span> &deg;</p>
                 </div>
             </div>
             <div class="weather_card">
@@ -53,8 +53,8 @@
                 <img src="./pictures/some_clouds.png" alt="some_clouds">
                 <p>some clouds</p>
                 <div class="high_low">
-                    <p class="high">21 &deg;</p>
-                    <p class="low">16 &deg;</p>
+                    <p class="high"><span id="temp5">21</span> &deg;</p>
+                    <p class="low"><span id="temp6">16</span> &deg;</p>
                 </div>
             </div>
             <div class="weather_card">
@@ -62,8 +62,8 @@
                 <img src="./pictures/some_sun.png" alt="some_sun">
                 <p>some sun</p>
                 <div class="high_low">
-                    <p class="high">26 &deg;</p>
-                    <p class="low">21 &deg;</p>
+                    <p class="high"><span id="temp7">26</span> &deg;</p>
+                    <p class="low"><span id="temp8">21</span> &deg;</p>
                 </div>
             </div>
         </div>
